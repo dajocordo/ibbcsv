@@ -1,0 +1,10 @@
+body {
+font-family: Arial, sans-serif;
+color: var(--color-text);
+background: var(--color-background);
+}
+
+.container {
+width: min(1200px, 90%);
+margin-inline: auto;
+}
