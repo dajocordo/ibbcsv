@@ -8,9 +8,9 @@ const instagramLink = "https://www.instagram.com/ibbc.elsalvador";
 </script>
 <template>
     <nav class="navbar">
-        <a href="#" class="logo">
+        <RouterLink to="/" class="logo">
             <img src="@/assets/images/ibbc-logo-small-64.png" alt="IBBC Logo" height="50" />
-        </a>
+        </RouterLink>
         <ul class="nav-links-2">
             <a :href="facebookLink" target="_blank" rel="noopener" class="logo-social">
                 <img :src="facebookIcon" alt="Facebook" height="24" />
@@ -23,9 +23,15 @@ const instagramLink = "https://www.instagram.com/ibbc.elsalvador";
             <span aria-hidden="true">☰</span>
         </button>
         <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li>
+                <RouterLink to="/">Inicio</RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/about">Acerca de</RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/contact">Contacto</RouterLink>
+            </li>
         </ul>
     </nav>
 </template>
